@@ -21,6 +21,8 @@ int main( int argc, char *argv[] )
 	int s;
 	struct ifreq buffer;
 
+	printf("test start!!!\n");
+
 	s = socket(PF_INET, SOCK_DGRAM, 0);
 
 	memset(&buffer, 0x00, sizeof(buffer));
